@@ -51,7 +51,6 @@ To install, *first modify the `values_hybrid.yaml` file to add redis details, yo
 
 Follow the instructions in notes to install the ingress controller. Sidecar injection support is coming soon!
 
-
 ## Important things to remember: Nodes are Segmented
 
 This Helm chart installs Tyk as a *segmented* Gateway service with an external load balancer, this means that the gateways that get deployed are tagged with the `ingress` tag. Tagged gateways like this will only load APIs that have also been tagged as `ingress`.
