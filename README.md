@@ -50,6 +50,10 @@ To install, *first modify the `values_hybrid.yaml` file to add redis details, yo
 	helm install -f ./values_hybrid.yaml ./tyk-hybrid
 
 Follow the instructions in notes to install the ingress controller. Sidecar injection support is coming soon!
+<<<<<<< HEAD
+=======
+
+>>>>>>> Update README.md
 
 ## Important things to remember: Nodes are Segmented
 
