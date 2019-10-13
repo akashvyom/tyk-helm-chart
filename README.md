@@ -41,6 +41,8 @@ The Tyk Identity Broker (TIB) is a microservice portal that provides a bridge be
 
 Once you have installed `Gateway` and `Dashboard` component you can configure `tib.conf` and `profile.json`, you can read about how to configure them here https://github.com/TykTechnologies/tyk-identity-broker#how-to-configure-tib, and use helm upgrade command to install TIB.
 
+###How to configure tib profiles
+You can create you own configMap for `profiles.json`, the name of which could then be passed in your `values.yaml` file under `tib.configMap.profiles`. This would be mounted as a read-only file. Post this if you want to make changes you can make use of REST api of broker to configure it(https://github.com/TykTechnologies/tyk-identity-broker/blob/master/README.md#the-broker-api).
 
 ## Install Tyk Hybrid Gateways (This can be used either for Multi-Cloud Gateways or MDCB slaves)
 To install, *first modify the `values_hybrid.yaml` file to add redis details, your RPC key, API key and Dashboard URL*:
